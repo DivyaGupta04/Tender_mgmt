@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permissions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #fff, #adcde4, #7db6dd);
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        header .menu {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        header .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        h2 {
+            color: grey;
+            font-size: 1.2em;
+        }
+
+        /* Hamburger Icon for Mobile */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: #EC8B0A;
+        }
+
+        /* Hide menu initially on small screens */
+        .menu {
+            transition: max-height 0.3s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                background-color: #000;
+            }
+
+            .menu.show {
+                display: flex;
+            }
+
+            /* Show the hamburger icon on small screens */
+            .menu-toggle {
+                display: flex;
+            }
+        }
+        
+        /* Container */
+        .container {
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #0a3654;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 img {
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Permissions list */
+        .permissions {
+            list-style: none;
+            padding: 0;
+        }
+        .permissions li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 8px 0;
+            background-color: #f9f9f9;
+            color: #0a3654;
+        }
+
+        /* Buttons */
+        .buttons {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .buttons .close-btn, .buttons .submit-btn {
+            background: linear-gradient(90deg, black, grey);
+            color: #EC8B0A;
+            border-radius: 20px;
+        }
+
+        /* Checkboxes */
+        input[type="checkbox"] {
+            display: none; 
+        }
+        input[type="checkbox"] + label {
+            position: relative;
+            padding-left: 30px; 
+            cursor: pointer;
+        }
+        input[type="checkbox"] + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px; 
+            height: 20px; 
+            border: 2px solid #0a3654; 
+            border-radius: 50%; 
+            background-color: white; 
+        }
+        input[type="checkbox"]:checked + label:before {
+            background-color: #0a3654; 
+            box-shadow: inset 0 0 0 4px white; 
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .buttons {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+            .permissions li {
+                flex-direction: row; 
+                justify-content: space-between;
+                align-items: center;
+            }
+            .permissions li input[type="checkbox"] + label {
+                padding-left: 10px; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Logo & Name</div>
+    <div class="menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+        <a href="#">Log out</a>
+        <div class="icon"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30" height="30">
+                <!-- Circle -->
+                <circle cx="256" cy="256" r="240" fill="#505b62" stroke="#505b62" stroke-width="15"/>
+                <!-- User icon -->
+                <path fill="none" stroke="#ec8b0a" stroke-width="20" d="M256 128c44.2 0 80 35.8 80 80s-35.8 80-80 80-80-35.8-80-80 35.8-80 80-80zm0 288c-53 0-100-24.3-130.4-62.4 15.5-38.6 53.2-65.6 98.4-65.6h64c45.3 0 82.9 27 98.4 65.6C356 391.7 309 416 256 416z"/>
+            </svg>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span> </span>
+        </div>
+    </div>
+</header>
+
+<div class="nav-content">
+    <h2><a href="" style="color: gray; text-decoration: none;"> Home </a> 
+        <a href="" style="color: gray; text-decoration: none;"> / Add New User </a> 
+        <span><a href="" style="color: #0a3654; text-decoration: none;"><b> / Finalise Permissions</b> </a></span>
+    </h2>
+</div>
+
+<div class="container">
+    <h1><img src="C:\Users\Yash Gupta\Downloads\shield.png" alt="Shield Icon"><b> Permissions </b></h1>
+
+    <!-- Permissions list (from API) -->
+    <ul class="permissions" id="permissions-list"></ul>
+
+    <div class="buttons">
+        <button class="close-btn">Close</button>
+        <button class="submit-btn" onclick="submitPermissions()">Submit</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; Tender Management. All rights reserved.</p>
+</footer>
+
+<script>
+    // Toggle the menu visibility when the hamburger icon is clicked
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+
+    // Fetch permissions from the API and display them
+    async function fetchPermissionsFromAPI() {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                const permissions = [
+                    { id: 1, name: 'View contractor details' },
+                    { id: 2, name: 'Delete/update contractor (Contractor name)' },
+                    { id: 3, name: 'Insert new contractors' },
+                    { id: 4, name: 'View work list' },
+                    { id: 5, name: 'Delete work list' },
+                    { id: 6, name: 'Update work list with options' },
+                    { id: 7, name: 'Insert new work' },
+                    { id: 8, name: 'Allow filter operations' },
+                    { id: 9, name: 'Allow sort operations' },
+                    { id: 10, name: 'View AE lists' },
+                    { id: 11, name: 'Delete/update AE lists' },
+                    { id: 12, name: 'Insert new AE in lists' }
+                ];
+                resolve(permissions);
+            }, 100);
+        });
+    }
+
+    async function displayPermissions() {
+        const permissionsList = document.getElementById('permissions-list');
+        const permissions = await fetchPermissionsFromAPI();
+
+        permissions.forEach(permission => {
+            const listItem = document.createElement('li');
+            listItem.className = 'list-group-item permission-item';
+            listItem.innerHTML = `
+                <span>>> ${permission.name}</span>
+                <input type="checkbox" name="permission" id="perm-${permission.id}" value="${permission.name}">
+                <label for="perm-${permission.id}"></label>
+            `;
+            permissionsList.appendChild(listItem);
+        });
+    }
+
+    displayPermissions();
+
+    function submitPermissions() {
+        const selectedPermissions = Array.from(document.querySelectorAll('input[name="permission"]:checked'))
+            .map(checkbox => checkbox.value);
+
+        if (selectedPermissions.length > 0) {
+            const confirmAction = confirm('Do you want to recheck the permissions allowed to the new user?');
+
+            if (confirmAction) {
+                alert('Permissions submitted');
+            }
+        } else {
+            alert('Please select at least one permission!');
+        }
+    }
+</script>
+
+</body>
+</html>
