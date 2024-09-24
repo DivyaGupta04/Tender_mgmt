@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    color: #ffa500;
+}
+
+header .logo-name {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.logout {
+    color:white;
+}
+.logout:hover{
+    background-color: #ffa500;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user-icon, .menu {
+    font-size: 24px;
+    margin-left: 10px;
+    color: white;
+}
+
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   background-color: white;
+    
+}
+
+.welcome-text {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.welcome-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #003366;
+}
+
+.welcome-text p {
+    margin: 5px 0;
+    color: #003366;
+}
+
+.illustration img {
+    width: 200px;
+    height: auto;
+}
+
+.buttons-section{
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 50px;
+    background: linear-gradient(to right, #ffffff, #114886);
+}
+
+.button-card {
+    background: #ffffff;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.button-section-2{
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 20px;
+   margin-bottom: 10px;
+    
+    background: linear-gradient(to right, #ffffff, #114886);
+}
+
+
+.button-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background:linear-gradient(to right,#000,#4e4f50);
+    border-radius: 20%;
+    padding: 7px;
+    
+}
+
+.p {
+    
+    color: #ffa500;
+    text-align:center;
+}
