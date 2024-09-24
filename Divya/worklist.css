@@ -1,0 +1,130 @@
+        /* Basic Styling */
+        body {
+            background: linear-gradient(180deg, #fff, #adcde4, #7db6dd); 
+        }
+        .h2{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: #0a3654;
+        }
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            padding: 10px 20px;
+            color: #ffa500;
+        }
+        
+        header .logo-name {
+            font-size: 20px;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        .logout {
+            color:white;
+        }
+        .logout:hover{
+            background-color: #ffa500;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        .user-icon, .menu {
+            font-size: 24px;
+            margin-left: 10px;
+            color: white;
+        }
+        
+
+        .sidebar {
+            background-color: #0a3654; 
+            color: white;
+            min-height: 100vh;
+            padding-top: 20px;
+            min-width:fit-content;
+            padding-right: 10px;
+        }
+
+        .sidebar a {
+            color: grey; 
+            padding: 15px;
+            display: block;
+        }
+
+        /* .sidebar a:hover {
+            background-color: white; 
+            text-decoration: none;
+            border-radius: 10px;
+        } */
+
+        .icon {
+            background: #ffffff;
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            background: linear-gradient(to right, #ffffff, #114886);
+        }
+        .content {
+            padding: 20px;
+        }
+
+        .table th, .table td {
+            vertical-align: middle;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            margin-top: auto;
+        }
+        .search-container {
+  display: flex; /* Ensures input and button are side-by-side */
+  align-items: center; /* Vertically aligns elements */
+  border: 1px solid #ccc; /* Light grey border */
+  padding: 5px 10px; /* Some padding around elements */
+  border-radius: 5px; /* Slight rounded corners */
+}
+
+.search-input {
+  border: none; /* Removes default input border */
+  outline: none; /* Removes focus outline */
+  flex: 1; /* Allows input to grow and take up available space */
+  padding: 5px; /* Padding inside the input field */
+  font-size: 16px;
+}
+
+.search-button {
+  background: none; /* Removes default button background */
+  border: none; /* Removes default button border */
+  cursor: pointer; /* Changes cursor to a pointer hand on hover */
+  font-size: 16px;
+}
+
+/* .fa-search {
+  /* Assuming you are using Font Awesome for the icon */
+/* } */
+      
