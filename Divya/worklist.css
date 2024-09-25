@@ -149,7 +149,8 @@
 
         .table th, .table td {
             vertical-align: middle;
-            
+            border: 1px solid white;
+            border-collapse: collapse;
             
         }
 
@@ -165,10 +166,10 @@
         .search-container {
   display: flex; /* Ensures input and button are side-by-side */
   align-items: right; /* Vertically aligns elements */
-  border: 1px solid #ccc; /* Light grey border */
+  border: 1px solid #2584c6; /* Light grey border */
   padding: 5px 10px; /* Some padding around elements */
   border-radius: 20px; /* Slight rounded corners */
-  box-sizing:unset;
+  border-width: 3px;
 }
 
 .search-input {
@@ -223,6 +224,8 @@
     border-color: #2584c6;
     border-radius: 5px;
     border-width: 3px;
+    padding: 5px 10px 7px 10px;
+    min-width: fit-content;
 
  }
 
