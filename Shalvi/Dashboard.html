@@ -7,18 +7,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Tender Management Portal</title>
+    <style>
+         header {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="logo-name">Logo & Name</div>
         <nav>
-        <div class="logo-name"><img  src="logo.png"> Name</div>
-        
             <a href="#">Home</a>
-            <a href="#">About us</a>
+            <a href="#">About Us</a>
             <a href="#">Contact</a>
-            <a href="#" class="logout">Log out</a>
-            <a href="#"><img class="user-icon" src="Group 3.png" alt="profile"></a>
-            <a href="#" class="menu">&#9776;</div></a>
+            <a href="#" class="logout">Log Out</a>
+            <a href=""><div class="user-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30" height="30">
+                    <!-- Circle -->
+                    <circle cx="256" cy="256" r="240" fill="#505b62" stroke="#505b62" stroke-width="15"/>
+                    <!-- User icon -->
+                    <path fill="none" stroke="#ec8b0a" stroke-width="20" d="M256 128c44.2 0 80 35.8 80 80s-35.8 80-80 80-80-35.8-80-80 35.8-80 80-80zm0 288c-53 0-100-24.3-130.4-62.4 15.5-38.6 53.2-65.6 98.4-65.6h64c45.3 0 82.9 27 98.4 65.6C356 391.7 309 416 256 416z"/>
+                </svg></a>
+            </div>
+            <a><div class="sidebar-toggle" style="size: 20px;">&#9776;</div></a>
         </nav>
     </header>
 

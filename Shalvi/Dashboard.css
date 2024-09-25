@@ -1,54 +1,46 @@
-/* General Styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-    padding: 10px 20px;
-    color: #ffa500;
-}
-
-header .logo-name {
-    font-size: 20px;
-    
-
-}
-.logo-name img{
-    height:25px;
-    width:25px;
-    margin-right: 10px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    
-    
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-
-}
-
-.logout {
-    color:white;
-}
-.logout:hover{
-    background-color: #ffa500;
-    padding: 5px 7px;
-    border-radius: 5px;
-}
-
+        /* Basic Styling */
+        body {
+            background: linear-gradient(180deg, #fff, #adcde4, #7db6dd); 
+        }
+        .h2{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: #0a3654;
+        }
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            padding: 10px 20px;
+            color: #ffa500;
+        }
+        
+        header .logo-name {
+            font-size: 20px;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        .logout {
+            color:white;
+        }
+        .logout:hover{
+            background-color: #ffa500;
+            padding: 5px 7px;
+            border-radius: 5px;
+        }
 .user-icon,.menu {
    height:25px ;
    width:25px ;
