@@ -144,7 +144,7 @@
             background: linear-gradient(to right, #ffffff, #114886);
         }
         .content {
-            padding: 20px;
+            padding: 10px;
         }
 
         .table th, .table td {
@@ -222,7 +222,7 @@
  /* row select */
  .row-selector {
     border-color: #2584c6;
-    border-radius: 5px;
+    border-radius: 10px;
     border-width: 3px;
     padding: 5px 10px 7px 10px;
     min-width: fit-content;
