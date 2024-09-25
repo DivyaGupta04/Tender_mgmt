@@ -41,16 +41,75 @@
             padding: 5px 10px;
             border-radius: 5px;
         }
+        .button-card {
+            background: #ffffff;
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
         
-        .user-icon, .menu {
+        .button-card-2 {
+            background: #ffffff;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .button-card-2:hover {
+    transform: translateY(-5px);
+}
+.button-card-1 {
+            background: linear-gradient(to bottom, #3379c8, #114886);
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            /* border-color: #0a3; */
+        }
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background:linear-gradient(to right,#000,#4e4f50);
+    border-radius: 20%;
+    padding: 10px;
+    
+}
+
+.p {
+    
+    color: white;
+    text-align:center;
+}
+        /* .user-icon, .menu {
             font-size: 24px;
             margin-left: 10px;
             color: white;
-        }
+        } */
         
 
         .sidebar {
-            background-color: #0a3654; 
+            background-color: white; 
             color: white;
             min-height: 100vh;
             padding-top: 20px;
@@ -103,7 +162,7 @@
         }
         .search-container {
   display: flex; /* Ensures input and button are side-by-side */
-  align-items: center; /* Vertically aligns elements */
+  align-items: right; /* Vertically aligns elements */
   border: 1px solid #ccc; /* Light grey border */
   padding: 5px 10px; /* Some padding around elements */
   border-radius: 5px; /* Slight rounded corners */
