@@ -1,0 +1,178 @@
+/* Basic Styles */
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    color: #ffa500;
+}
+
+header .logo-name {
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.logout {
+    color:white;
+}
+.logout:hover{
+    background-color: #ffa500;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+.sidebar {
+    background-color: white; 
+    color: white;
+    min-height: 100vh;
+    padding-top: 20px;
+    min-width:fit-content;
+    padding-right: 10px;
+}
+
+.sidebar a {
+    color: grey; 
+    padding: 15px;
+    display: block;
+}
+
+.button-card {
+    background: #ffffff;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.button-card-2 {
+    background: #ffffff;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.button-card-2:hover {
+transform: translateY(-5px);
+}
+.button-card-1 {
+    background: linear-gradient(to bottom, #3379c8, #114886);
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    /* border-color: #0a3; */
+}
+
+.icon {
+width: 40px;
+height: 40px;
+margin-bottom: 10px;
+background:linear-gradient(to right,#000,#4e4f50);
+border-radius: 20%;
+padding: 10px;
+
+}
+
+.p {
+color: white;
+text-align:center;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to right, #e1ecf7, #7fb9ec);
+}
+
+.breadcrumb {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.breadcrumb span {
+    color: #333;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.search-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-box .search-button {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.engineers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.engineer-card {
+    background-color: #bdd7f3;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.engineer-icon {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.engineer-details p {
+    margin: 0;
+}
