@@ -237,21 +237,21 @@ h1 {
     background: linear-gradient(90deg, rgba(106, 106, 106, 0.28) 9.67%, rgba(132, 132, 132, 0.28) 21.67%, rgba(199, 199, 199, 0.28) 40.67%, rgba(255, 255, 255, 0.28) 67.17%, rgba(255, 255, 255, 0.28) 100%);
     justify-content: center;
     align-items: center;
-    width: 900px;
-    height: 600px;
+    width: 1000px;
+    height: 650px;
     top: 139px;
     left: 235px;
     gap: 0px;
     border-radius: 20px;
     opacity: 0px;
-    margin-left: 10%;
+    margin-left: 2%;
 
 }
 
 .engineers-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     padding:50px;
 
 
@@ -259,18 +259,24 @@ h1 {
 }
 
 .engineer-card {
-    background:linear-gradient(to left,white,#2676d1);
+    background:linear-gradient(to left,#5FBDFE,#397198);
     padding: 10px;
     border-radius: 10px;
     display: flex;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.engineer-icon {
-    font-size: 40px;
-    margin-right: 10px;
+.engineer-icon, .eng-photo {
+    font-size: 20px;
+    margin-right: 20px;
+    height:70px;
+    width:70px;
+    margin-bottom: 20px;
+    
+
 }
 
 .engineer-details p {
     margin: 0;
+    
 }
