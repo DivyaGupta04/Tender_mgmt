@@ -143,15 +143,14 @@
             cursor: pointer;
             background: linear-gradient(to right, #ffffff, #114886);
         }
-        .content {
+        /* .content {
             padding: 10px;
-        }
+        } */
 
         .table th, .table td {
             vertical-align: middle;
             border: 1px solid white;
             border-collapse: collapse;
-            
         }
 
         footer {
@@ -167,8 +166,8 @@
   display: flex; /* Ensures input and button are side-by-side */
   align-items: right; /* Vertically aligns elements */
   border: 1px solid #2584c6; /* Light grey border */
-  padding: 5px 10px; /* Some padding around elements */
-  border-radius: 20px; /* Slight rounded corners */
+  padding: 5px 20px; /* Some padding around elements */
+  border-radius: 50px; /* Slight rounded corners */
   border-width: 3px;
 }
 
