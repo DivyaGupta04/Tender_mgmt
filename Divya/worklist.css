@@ -143,9 +143,9 @@
             cursor: pointer;
             background: linear-gradient(to right, #ffffff, #114886);
         }
-        /* .content {
+        .content {
             padding: 10px;
-        } */
+        }
 
         .table th, .table td {
             vertical-align: middle;
