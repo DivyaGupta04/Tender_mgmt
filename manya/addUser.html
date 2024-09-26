@@ -11,8 +11,8 @@
             font-family: Arial, sans-serif;
             background-image: url('background.png');
             background-size: cover; 
-            background-position: 30px; 
-            background-repeat: no-repeat; 
+            background-position: 10px; 
+            background-repeat: no-repeat;
         }
         /* Header */
        header {
@@ -128,75 +128,98 @@
     text-align:center;
 }
         .form-container {
-            background: linear-gradient(90deg, rgba(106, 106, 106, 0.28) 9.67%, rgba(132, 132, 132, 0.28) 21.67%, rgba(199, 199, 199, 0.28) 40.67%, rgba(255, 255, 255, 0.28) 67.17%, rgba(255, 255, 255, 0.28) 100%);
+            background: linear-gradient(90deg, rgba(106, 106, 106, 0.28) 9.67%, rgba(132, 132, 132, 0.28) 21.67%, rgba(199, 199, 199, 0.28) 40.67%, rgba(255, 255, 255, 0.28) 67.17%, rgba(255, 255, 255, 0.28) 100% ,rgba(95, 189, 254, 0.9));
             justify-content: center;
             align-items: center;
-            width: 900px;
-            height: 600px;
-            top: 139px;
-            left: 235px;
-            gap: 0px;
+            width: 980px;
+            height: 500px;
             border-radius: 20px;
             opacity: 0px;
-            margin-left: 10%;
+            margin-left: 80px;
+            margin-top: 50px;
 
         }
         .icon-container {
-            width: 90px;
-            height: 83px;
+            width: 100px;
+            height: 100px;
             background-image: linear-gradient(#000000,#666666);
             border-radius: 15px;
-            top: 297.5px;
-            left: 442px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 40px !important;
-            margin-left: 50px !important;
-            margin-right: 80px !important;
+            margin-top: 30px;
+            margin-left: 30px;
         }
         .outer-container{
             background-color: rgba(80,91,98,0.4);
             align-items: center;
             justify-content: center;
             height: 166px;
-            width: 180px;
-            top: 256px;
-            left: 397px;
-            margin-left: 30px;
+            width: 180px; 
             border-radius: 15px;
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px) !important;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            margin-right: 650px;
+            margin-bottom: 80px;
         }
         .icon-container img {
             width: 60px;
             height: 60px;
+
             
         }
-        .btn-finalize {
-          
-            border-image: linear-gradient(45deg, #fab151, #dd922e, #ec8b0a, #bd6f08) 1;
-            border-width: 5px;
-            border-style: solid;
-            border-image-slice: 1;
-            margin-right: 30px;
-            order: -1;
-
-          }
-        
         .btn-register {
             width: 60%;
             padding: 12px;
             background-image: linear-gradient(#1e1e1e,#515151,#848484);
             color:#ec8b0a;
-            
+            margin-left: 50px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             font-size: 16px;
             font-weight: bold;
             box-shadow: 0 6px 10px rgba(0,0,0,0.1);
-            
+            margin-top: 15px;
+        }
+        .btn-finalize {
+          
+          background: transparent;
+          border: none;
+          border-radius: 10px !important;
+          width: 230px;
+          padding: 10px;
+          position: absolute;
+          margin-top: 230px;
+          margin-right: 650px;
+          
+          /* Create gradient border effect */
+          position: absolute;
+          isolation: isolate;
+          overflow: hidden;
+      }
+        .btn-finalize::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 10px; /* Match the button's border-radius */
+            padding: 5px; /* This determines the border width */
+            background: linear-gradient(45deg, #fab151, #dd922e, #ec8b0a, #bd6f08);
+            -webkit-mask: 
+                linear-gradient(#fff 0 0) content-box, 
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            z-index: -1;
+        }
+
+        .btn-register:hover{
+            color: #ec8b0a;
+            background-image: linear-gradient(#1e1e1e,#515151,#848484);
         }
         
         .hometitle{
@@ -206,10 +229,13 @@
         .formAddUser{
           text-align: center;
           color: #124060;
-          font-family: 'Times New Roman', Times, serif;
-          font-weight: 700px !important;
-          font-size: 42px;
-          line-height: 48.3px;
+          font-family: 'Times New Roman';
+          font-weight: bolder;
+          font-size: 40px;
+          margin-left: 200px;
+          margin-bottom: 0px !important;
+          margin-top: 40px;
+          
         }
         .form-control{
         background: rgba(95, 189, 254, 0.9);
@@ -217,6 +243,7 @@
           text-align: center;
            width: 50px !important;
            height: 51px !important;
+           border-radius: 10px;
 
         }
         .form-select{
@@ -227,7 +254,7 @@
         }
         .placeholders{
             margin-left: 80px;
-            padding: 30px;
+            padding: 10px;
         }
         .input-group{
            
@@ -241,9 +268,42 @@
         }
         .input-group-text{
             background: rgba(95, 189, 254, 0.9);
-
+            border-radius: 10px;
         }
-       
+       .boxfix{
+        justify-content: center !important;
+        align-items: center !important;
+        margin-left: 100px;
+        margin-top: 0px;
+        
+       }
+       .topheading{
+        align-items: left !important;
+        margin-left: 0px !important;
+       }
+       .blueboxes{
+        margin-left: 90px;
+       }
+       .activeuserbtn{
+        color: rgba(236, 139, 10, 1);
+        font-weight: 700;
+        font-size: 18px;
+        border: 3px solid rgba(37, 132, 198, 1);
+        border-radius: 10px;
+        margin-right: 0px;
+        background: transparent;
+        padding: 5px;
+        width: 214px;
+       }
+       footer{
+            background-color: #373737;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -316,16 +376,17 @@
        </div>
 
             <main class="col-md-10 ms-sm-auto px-md-4">
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="hometitle">Home / Add new user</h1>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-left pt-2 pb-2 mb-3 ">
+                    <div class="topheading" >Home / <span style="color: #124060; font-weight: bold;">Add new user</span></div>
+                    <button class="activeuserbtn"> View active users</button>
                 </div>
 
                 <div class="row">
                     
                         <div class="form-container">
                             <h2 class="mb-4 formAddUser">Add new user</h2>
-                            <div class="row">
-                                
+                            <div class="row boxfix">
+                                <button class="btn-finalize "><span>Finalise Permissions</span></button>
                                 <div class="col-md-4 outer-container">
                                     <div class="icon-container ">
                                         <img src="add-newuser.png" alt="Add User" width="60" height="60">
@@ -333,14 +394,15 @@
                                     
                                     
                                 </div>
+                                
                                 <div class="col-md-8 placeholders">
-                                    <form>
+                                    <form class="blueboxes">
                                         <div class="mb-3">
                                             <div class="input-group">
                                                 <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" >
                                                   <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-4.418 0-8 1.79-8 4v2h16v-2c0-2.21-3.582-4-8-4z"/>
                                                 </svg></span>
-                                                <input type="text" class="form-control" placeholder="Name">
+                                                <input type="text" id="name" class="form-control" placeholder="Name">
                                             </div>
                                         </div>
                                         <div class="mb-3">
@@ -348,7 +410,7 @@
                                                 <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" >
                                                   <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.11-.21c1.12.47 2.34.73 3.59.73.55 0 1 .45 1 1v3.5c0 .55-.45 1-1 1C10.29 21 3 13.71 3 4.5c0-.55.45-1 1-1H7.5c.55 0 1 .45 1 1 0 1.25.26 2.47.73 3.59.17.39.09.85-.21 1.11l-2.2 2.2z"/>
                                                 </svg></span>
-                                                <input type="text" class="form-control" placeholder="Contact Number">
+                                                <input type="text" id="contact" class="form-control" placeholder="Contact Number">
                                             </div>
                                         </div>
                                         <div class="mb-3">
@@ -356,7 +418,7 @@
                                                 <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                                   <path d="M17 8V6c0-2.757-2.243-5-5-5S7 3.243 7 6v2H5v14h14V8h-2zm-2 0H9V6c0-1.654 1.346-3 3-3s3 1.346 3 3v2z"/>
                                                 </svg></span>
-                                                <input type="password" class="form-control" placeholder="Password">
+                                                <input type="password" id="password" class="form-control" placeholder="Password">
                                             </div>
                                         </div>
                                         <div class="mb-3">
@@ -364,9 +426,9 @@
                                                 <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                                                   <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.25 17.25l-4.5-4.5 1.767-1.767L10.75 13.5l5.983-5.983L18.5 9l-7.75 8.25z"/>
                                                 </svg></span>
-                                                <input type="text" class="form-control" placeholder="Enter validity">
+                                                <input type="text" id="validity" class="form-control" placeholder="Enter validity">
                                                 
-                                                <select class="form-select" style="max-width: 120px;">
+                                                <select class="form-select" id="dropdown" style="max-width: 120px;">
                                                     <option>Month</option>
                                                     <option>Years</option>
                                                     <option>Hours</option>
@@ -374,7 +436,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <button class="btn btn-finalize btn-sm">Finalise Permissions</button>
+                                        
                                         <button type="submit" class="btn btn-register">Register new user</button>
                                     </form>
                                 </div>
@@ -385,6 +447,9 @@
             </main>
         </div>
     </div>
+    <footer>
+            <p>&copy; Tender Management. All rights reserved.</p>
+    </footer>
 
     
 </body>
