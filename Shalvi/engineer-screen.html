@@ -174,12 +174,37 @@
             </div>
         
         <main>
-            <div class="breadcrumb">Home / <span>Engineers</span></div>
-            <h1>Engineers</h1>
-            <div class="search-box">
-                <input type="text" placeholder="Enter here">
-                <button class="search-button">&#128269;</button>
-            </div>
+            <span class="breadcrumb">Home / <span>Engineers</span></span>
+            <div class="container mt-5">
+                <!-- Header with Search and Add button -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="title" id="h3" style="text-align: centre;"><span></span></h3>
+                    <span>
+                        <h1 class="heading" style="text-align: center;">Engineers</h1>
+                    </span>
+                    <div class="search-section">
+
+                        <div class="search-container" id="search">
+                            <span class="input-group-text" id="basic-addon1"><i
+                                    class="far fa-keyboard"></i></span>
+                            <input type="text" placeholder="Enter here" class="form-control search-input">
+                            <button type="submit" class="btn btn-dark search-button-dark"
+                                style="border-radius: 10px;">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="buttons">
+                            <button class="add-btn"> Add New Engineer </button>
+                            <select class="row-selector">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
             <div class="engineers-grid">
                 <div class="engineer-card">
                     <div class="engineer-icon"><img src="engineer.png" alt="eng"></div>
@@ -213,9 +238,44 @@
                         <p>Experience: 5 years</p>
                     </div>
                 </div>
+                <div class="engineer-card">
+                    <div class="engineer-icon"><img src="engineer.png" alt="eng"></div>
+                    <div class="engineer-details">
+                        <p>Name: Mr.xzy</p>
+                        <p>ID: 0000000</p>
+                        <p>Experience: 5 years</p>
+                    </div>
+                </div>
+                <div class="engineer-card">
+                    <div class="engineer-icon"><img src="engineer.png" alt="eng"></div>
+                    <div class="engineer-details">
+                        <p>Name: Mr.xzy</p>
+                        <p>ID: 0000000</p>
+                        <p>Experience: 5 years</p>
+                    </div>
+                </div>
+               
+                </div>
                 </div>
             </div>
-        
+            </div>
+         <!-- Pagination -->
+         <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                      <  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#"> > </a>
+                </li>
+            </ul>
+        </nav>
     </main>
     <footer>
         <p>&copy; Tender Management. All rights reserved.</p>
