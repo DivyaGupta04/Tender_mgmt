@@ -122,7 +122,15 @@
     text-align:center;
 }
 
-    
+#h3 {
+            color: #002244;
+            
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+
+        }
+
 footer {
             text-align: center;
             padding: 10px;
@@ -199,18 +207,21 @@ footer {
                 <img class="icon" src="pay 1.png" alt="loading img">
             </div>
             <div class="p">Payments</div>
-        </div>
+        </div><br>
        </div>
 
        <main>
-        <div class="home">Home / <span>Contractor</span></div>
+        <div class="home"><a href="" style="color: gray; text-decoration: none;">Home </a>
+             <span><a href="" style="color: #0a3654; text-decoration: none; font-weight: bold;"> /Contractor </a></span></div>
 
 
-       <div class="container mt-5">
+       <div class="container mt-2">
         <!-- Header with Search and Add button -->
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <h3 class="title" style="text-align: centre;">Contractors</h3>
-            
+        <div class="d-flex justify-content-between align-items-center mb-1">
+            <h3 class="title" style="text-align: centre;"> <span></span></h3>
+            <span>
+                <h1 class="heading" style="text-align: center;" id="h3">Contractors</h1>
+            </span>
             <div class="search-section">
                 
                 <div class="search-container" id="search">
@@ -233,11 +244,76 @@ footer {
         </div>
         <br>
         
+        <div class="form-container">
+            <div class="contractors-grid">
+                <div class="contractor-card">
+                    <div class="contractor-icon"><img src="block-user.png" alt="eng"></div>
+                    <div class="contractor-details">
+                        <p class="card-title"> Contractor name : Mr. XYZ</p>
+                        <p>Card No. : 0123456789</p>
+                        <p>GST No. : 22 AAAAAOOOOOA 1Z5</p>
+                        <p>State/City: New Delhi</p>
+                        <button class="btn btn-outline-primary btn-sm unblock-btn">UNBLOCK</button>
+                    </div>
+                </div>
+                <div class="contractor-card">
+                    <div class="contractor-icon"><img src="block-user.png" alt="eng"></div>
+                    <div class="contractor-details">
+                        <p class="card-title"> Contractor name : Mr. XYZ</p>
+                        <p>Card No. : 0123456789</p>
+                        <p>GST No. : 22 AAAAAOOOOOA 1Z5</p>
+                        <p>State/City: New Delhi</p>
+                        <button class="btn btn-outline-primary btn-sm block-btn">BLOCK</button>
+                    </div>
+                </div>
+                <div class="contractor-card">
+                    <div class="contractor-icon"><img src="block-user.png" alt="eng"></div>
+                    <div class="contractor-details">
+                        <p class="card-title"> Contractor name : Mr. XYZ</p>
+                        <p>Card No. : 0123456789</p>
+                        <p>GST No. : 22 AAAAAOOOOOA 1Z5</p>
+                        <p>State/City: New Delhi</p>
+                        <button class="btn btn-outline-primary btn-sm unblock-btn">UNBLOCK</button>
+                    </div>
+                </div>
+                <div class="contractor-card">
+                    <div class="contractor-icon"><img src="block-user.png" alt="eng"></div>
+                    <div class="contractor-details">
+                        <p class="card-title"> Contractor name : Mr. XYZ</p>
+                        <p>Card No. : 0123456789</p>
+                        <p>GST No. : 22 AAAAAOOOOOA 1Z5</p>
+                        <p>State/City: New Delhi</p>
+                        <button class="btn btn-outline-primary btn-sm unblock-btn">UNBLOCK</button>
+                    </div>
+                </div>
+                <div class="contractor-card">
+                    <div class="contractor-icon"><img src="block-user.png" alt="eng"></div>
+                    <div class="contractor-details">
+                        <p class="card-title"> Contractor name : Mr. XYZ</p>
+                        <p>Card No. : 0123456789</p>
+                        <p>GST No. : 22 AAAAAOOOOOA 1Z5</p>
+                        <p>State/City: New Delhi</p>
+                        <button class="btn btn-outline-primary btn-sm unblock-btn">UNBLOCK</button>
+                    </div>
+                </div>
+                <div class="contractor-card">
+                    <div class="contractor-icon"><img src="block-user.png" alt="eng"></div>
+                    <div class="contractor-details">
+                        <p class="card-title"> Contractor name : Mr. XYZ</p>
+                        <p>Card No. : 0123456789</p>
+                        <p>GST No. : 22 AAAAAOOOOOA 1Z5</p>
+                        <p>State/City: New Delhi</p>
+                        <button class="btn btn-outline-primary btn-sm unblock-btn">UNBLOCK</button>
+                    </div>
+                </div>
+               
+                </div>
+                </div>
 
         <!-- Contractor Cards List -->
-        <div class="row">
+        <!-- <div class="row"> -->
             <!-- Contractor Card Start -->
-            <div class="col-md-6 mb-3">
+            <!-- <div class="col-md-6 mb-3">
 
                 <div class="card contractor-card" >
                     <div class="con-icon"><img src="block-user.png" alt="con" width="50px" height="50px"></div>
@@ -249,11 +325,11 @@ footer {
                         <button class="btn btn-outline-primary btn-sm unblock-btn">UNBLOCK</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Contractor Card End -->
 
             <!-- Repeat for multiple contractors -->
-            <div class="col-md-6 mb-3">
+            <!-- <div class="col-md-6 mb-3">
                 <div class="card contractor-card">
                     <div class="con-icon"><img src="block-user.png" alt="con" width="50px" height="50px"></div>
                     <div class="card-body" id="card">
@@ -265,8 +341,8 @@ footer {
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 mb-3">
+        </div> -->
+        <!-- <div class="col-md-6 mb-3">
             <div class="card contractor-card">
                 <div class="con-icon"><img src="block-user.png" alt="con" width="50px" height="50px"></div>
                 <div class="card-body">
@@ -277,7 +353,8 @@ footer {
                     <button class="btn btn-outline-primary btn-sm unblock-btn">UNBLOCK</button>
                 </div>
             </div>
-        </div>
+        </div> -->
+        
     </div>
              
     

@@ -7,6 +7,12 @@
             font-weight: bold;
             color: #0a3654;
         }
+        .h3{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: #0a3654;
+        }
         /* Header */
         header {
             display: flex;
@@ -225,13 +231,12 @@
 border-radius: 10px;
 }
 
-
-        .card {
+        /* .card {
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #f5faff; /* Light blue card background */
+            background-color: #f5faff; 
             border: none;
-        }
+        } */
         
         .contractor-card .card-title {
             font-size: 16px;
@@ -239,14 +244,18 @@ border-radius: 10px;
             color: #002244;
         }
         
-        .contractor-card .card-text {
+        /* .contractor-card .card-text {
             font-size: 14px;
             color: #555;
-        }
+        } */
         
-        .unblock-btn {
+        .unblock-btn, .block-btn {
             color: #0056b3;
             border-color: #0056b3;
+            align-self: flex-end;
+            border-radius: 5px;
+            border-width: 2px;
+
         }
         
         .pagination .page-link {
@@ -285,6 +294,55 @@ border-radius: 10px;
             font-weight: bold;
         }
 
-        #card{
-            text-align: justify;
+
+        .form-container {
+            background: linear-gradient(90deg, rgba(106, 106, 106, 0.28) 9.67%, rgba(132, 132, 132, 0.28) 21.67%, rgba(199, 199, 199, 0.28) 40.67%, rgba(255, 255, 255, 0.28) 67.17%, rgba(255, 255, 255, 0.28) 100%);
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            height: 650px;
+            top: 139px;
+            left: 235px;
+            gap: 0px;
+            border-radius: 20px;
+            opacity: 0px;
+            margin-left: 5%;
+        
         }
+        
+        .contractors-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 30px;
+            padding: 40px;
+        
+        }
+        
+        .contractor-card {
+            background:linear-gradient(to left,white,#2676d1);
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contractor-icon {
+            font-size: 40px;
+            margin-right: 10px;
+        }
+        
+        .contractor-details p {
+            margin: 0;
+        }
+
+        .contractor-details {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        
+        /* #card{
+            text-align: justify;
+        } */
